@@ -570,7 +570,7 @@
 }
 
 .partners__item {
-  background-image: url("../../img/icons/icons.svg#partner");
+  background-image: url("../../img/sprite/sprite.svg#partner");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
