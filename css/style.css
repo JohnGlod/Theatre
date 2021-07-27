@@ -172,7 +172,7 @@
 
 .btn-right::after {
   content: '';
-  background-image: url("/img/old-icons/arrow.svg");
+  background-image: url("../../img/icons/arrow.svg");
   width: 41px;
   height: 16px;
   position: absolute;
@@ -185,7 +185,7 @@
 
 .btn-left::before {
   content: '';
-  background-image: url("/img/old-icons/arrow.svg");
+  background-image: url("../../img/icons/arrow.svg");
   width: 41px;
   height: 16px;
   position: absolute;
@@ -318,9 +318,9 @@
 .info__logo {
   width: 70px;
   height: 70px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-bottom: 15px;
+  fill: var(--color-white);
+  fill-opacity: .6;
 }
 
 .info__text {
@@ -441,6 +441,7 @@
   width: 30px;
   height: 30px;
   margin: auto;
+  fill: var(--color-white);
 }
 
 @-webkit-keyframes pulse {
@@ -570,7 +571,7 @@
 }
 
 .partners__item {
-  background-image: url("../../img/sprite/sprite.svg#partner");
+  background-image: url("../../img/icons/partner.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
