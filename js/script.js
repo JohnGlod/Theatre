@@ -77,7 +77,18 @@ let Projects  = new Swiper(ProjectsSlider, {
 
 	autoplay: {
 		delay: 3000,
-	}
+	},
+	on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
 });
 
 let Main = new Swiper(MainSlider, {
@@ -95,3 +106,55 @@ let Main = new Swiper(MainSlider, {
     prevEl: '.btn-left',
   },
 });
+
+// new Swiper(".projects-slider", {
+
+// 	centeredSlides: true,
+
+// 	loop: true, 
+
+// 	//Автовысота
+// 	autoHeight: true,
+
+// 	// Кол-во слайдов для показа | Позволяет задавать ширину самостоятельно
+// 	slidesPerView: 'auto',
+
+//  // Отступы
+// 	spaceBetween: 0,
+
+// 	//Включение / отключение 
+// 	// перетаскивание на пк
+// 	simulateTouch: true,
+
+// 	// Чувсвтвительность свайппа
+// 	touchRatio: 1,
+
+// 	// Угол срабатывания свайпа / перетаскивания 
+// 	touchAngle: 45,
+
+// 	// Курсор перетаскивания 
+// 	grabCursor: true,
+
+// 	autoplay: {
+// 		delay: 3000,
+// 	},
+
+// 	// breakpoints: {
+// 	//   // when window width is >= 320px
+// 	//   320: {
+// 	//     slidesPerView: 2,
+// 	//     spaceBetween: 0
+// 	//   },
+// 	//   // when window width is >= 480px
+// 	//   480: {
+// 	//     slidesPerView: 2,
+// 	//     spaceBetween: 0
+// 	//   },
+// 	//   // when window width is >= 640px
+// 	//   640: {
+// 	//     slidesPerView: 4,
+// 	//     spaceBetween: 0
+// 	//   }  
+// 	// }
+// });
+;
